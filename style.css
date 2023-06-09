@@ -1,0 +1,100 @@
+:root{
+    --Kelly-Green: #18A558;
+    --Neon-Green: #A3EBB1;
+    --Blue-Green: #21B6A8;
+    --Green: #116530;
+    --white: #fff;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--Neon-Green);
+}
+
+h1{
+    margin-top: 200px;
+    color: var(--white);
+    text-align: center;
+}
+
+form{
+    border: 1px solid;
+    width: 400px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+form input[type="text"]{
+    background-color: var(--Neon-Green);
+    color: var(--white);
+    border-style: none;
+    font-size: 1.5em;
+    
+}
+
+form input[type="text"]::placeholder{
+    color: var(--Blue-Green);
+}
+
+form input[type="text"]:focus{
+    outline: none;
+}
+
+/* el elemento focus no elimina la linea alrededor
+cuando el usuario va a escribir */
+
+form input[type="submit"]{
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    border-radius: 50%;
+    border-style: none;
+    background-color: var(--Kelly-Green);
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--Green);
+    cursor: pointer;
+    color: var(--white)
+}
+
+.list-container{
+    width: 400px;
+    margin: 0 auto
+}
+
+.task-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--Blue-Green);
+}
+
+.closeBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
+
+#stats{
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: var(--Green);
+    text-align: center;
+ 
+    align-items: center;
+}
